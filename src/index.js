@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 import PropTypes from 'prop-types'
+import registerServiceWorker from './registerServiceWorker';
 
 import withGoogle from 'apis/google'
 
@@ -11,9 +12,11 @@ import Map from 'components/Map'
 import Markers from 'components/Markers'
 import ShowBox from 'components/ShowBox'
 
+registerServiceWorker()
+
 const rootDom =  document.getElementById('root')
 
-if (window.outerWidth < 800) { 
+if (window.outerWidth < 800) {
 	window.isSmallScreen = true
 	rootDom.className = `sd ${rootDom.className}`
 }
@@ -103,7 +106,7 @@ class App extends Component {
 			<React.Fragment>
 				<div className="map-container">
 					<Map center={state.mapCenter} zoom={state.mapZoom}>
-						{state.geocodedMarkerPositions && 
+						{state.geocodedMarkerPositions &&
 							<Markers
 								positions={state.filteredMarkerPositions}
 								fitMap={this.fitMap}
