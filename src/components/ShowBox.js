@@ -89,7 +89,7 @@ class ShowBox extends Component {
 						<button className="type-button" onClick={this.typeButtonClicked.bind(this)}>{tooltips.typeButton[state.ifCurtainShow ? 'max' : 'min']}</button>
 					</div>
 				)}
-				{window.isSmallScreen && <button className="list-button" onClick={this.listButtonClicked.bind(this)}>{tooltips.listButton[state.ifListShow ? 'show' : 'hide']}</button>}
+				{window.isSmallScreen && <button className="list-button" tabIndex="1" onClick={this.listButtonClicked.bind(this)}>{tooltips.listButton[state.ifListShow ? 'show' : 'hide']}</button>}
 
 
 				<div className="showbox-content">

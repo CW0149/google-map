@@ -39,7 +39,7 @@ class Map extends PureComponent {
 		}) : undefined
 
 		return (
-			<div id="map">
+			<div id="map" role="application">
 				{ChildrenWithProps}
 			</div>
 		)

@@ -26,12 +26,12 @@ function PosList(props) {
 	const { classes } = props
 
 	return (
-		<Paper className={`${classes.root} list`}>
+		<Paper className={`${classes.root} list`} tabIndex="2">
 			<List className={`${classes.ul}`}>
 				{
 					props.data.map((row, index) => {
 						return (
-							<React.Fragment key={row.place_id || index}>
+							<li key={row.place_id || index}>
 								<ListItem button className={`${classes.li} list-item`} onClick={props.placeClicked.bind(props, row)}>
 									<Tooltip title={row.name || 'unknow'}>
 										<Typography variant="body2" gutterBottom align="center" noWrap>
@@ -40,7 +40,7 @@ function PosList(props) {
 									</Tooltip>
 								</ListItem>
 								<Divider />
-							</React.Fragment>
+							</li>
 						)
 					})
 				}
