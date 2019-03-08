@@ -27,6 +27,6 @@
 
 项目使用 create-react-app 默认的 service-worker, 生产环境下支持
 
-## 配置
+## 配置 google map key
 
-在 src/configs/map.js 中配置你的 google map api key.
+在 src/configs 中新建一个 key.json 文件，在里面写入 google map key 字符串
