@@ -1,5 +1,5 @@
 const api = {
-	url: 'http://maps.google.cn//maps/api/js?libraries=places,geometry,drawing&key=${your key}&v=3&region=cn&language=zh-CN'
+	url: 'http://maps.google.cn//maps/api/js?libraries=places,geometry,drawing&key=[Your GoogleMap Api Key]&v=3&region=cn&language=zh-CN'
 }
 
 const init = {
