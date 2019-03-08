@@ -2,9 +2,11 @@
 
 刚接触 React 的时候做的项目，先将它移植过来。
 
+项目展示地址：https://google-map.ryanhuang.cn 。
+
 ## 运行
 
-项目使用create-react-app[https://github.com/facebook/create-react-app] 构建
+项目使用[create-react-app](https://github.com/facebook/create-react-app) 构建
 
 * 进入项目根目录，npm install安装依赖
 * 在生产环境下运行: npm start
