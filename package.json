@@ -1,5 +1,6 @@
 {
   "name": "udacity-react-googlemap",
+  "homepage" : "http://CW0149.github.io/googlemap",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

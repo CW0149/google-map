@@ -1,5 +1,5 @@
 const api = {
-	url: 'http://maps.google.cn//maps/api/js?libraries=places,geometry,drawing&key=AIzaSyCNfNyRrTOzN-HYA4xwlQh2zjRgioFjT5I&v=3&region=cn&language=zh-CN'
+	url: 'http://maps.google.cn//maps/api/js?libraries=places,geometry,drawing&key=${your key}&v=3&region=cn&language=zh-CN'
 }
 
 const init = {
@@ -9,7 +9,7 @@ const init = {
 
 const markers = {
 	positionType: 'address', // latlng or address
-	latlngPositions: [		
+	latlngPositions: [
 		{lat: 26.274375604407346, lng: 105.72725371444236},
 		{lat: 27.905355448037255, lng: 120.99563645830955},
 		{lat: 23.293510777409757, lng: 111.11771616360785},
@@ -26,10 +26,10 @@ const markers = {
 		// {lat: 22.588844200000004, lng: 113.9640125}
 	],
 	addressPositions: [
-		// '广州', '深圳', '珠海', '东莞', '中山', '佛山', '惠州', 
+		'广州', '深圳', '珠海', '东莞', '中山', '佛山', '惠州',
 		'肇庆', '江门', '茂名', '汕头',
-		// '湛江', '梅州', '汕尾', '河源', '阳江', '韶关',
-		// '清远', '潮州', '揭阳', '云浮',
+		'湛江', '梅州', '汕尾', '河源', '阳江', '韶关',
+		'清远', '潮州', '揭阳', '云浮',
 		'桂林', '南宁', '柳州'
 	]
 }

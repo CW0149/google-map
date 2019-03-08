@@ -33,7 +33,8 @@ class SearchBox extends Component {
 					className="searchbox-input"
 					onChange={this.inputChange}
 					ref={(input) => {this.input = input}}
-					aria-label="输入过滤地点"
+					aria-label="定位下面地点"
+					placeholder="搜索定位下面地点"
 					tabIndex="0"
 				/>
 			</div>
@@ -42,7 +43,7 @@ class SearchBox extends Component {
 }
 
 SearchBox.defaultProps = {
-	
+
 }
 
 SearchBox.propTypes = {
